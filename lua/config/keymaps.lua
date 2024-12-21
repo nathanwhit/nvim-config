@@ -10,3 +10,8 @@ local function deleteKeys(keys)
     vim.keymap.del(current[1], current[2], current[3])
   end
 end
+deleteKeys({
+  -- { { "n" }, "<c-/>" },
+  -- { "n", "<Space>ft" },
+  -- { "n", "<Space>fT" },
+})

@@ -1,3 +1,14 @@
-return { { "akinsho/toggleterm.nvim", version = "*", config = true, opts = {
-  open_mapping = [[<c-/>]],
-} } }
+return {
+
+  -- {
+  --   "akinsho/toggleterm.nvim",
+  --   version = "*",
+  --   opts = {
+  --     open_mapping = [[<C-/>]],
+  --     -- open_mapping = true,
+  --   },
+  --   keys = {
+  --     { "<C-/>", "<cmd>ToggleTerm<cr>", desc = "Toggle terminal", silent = true },
+  --   },
+  -- },
+}
