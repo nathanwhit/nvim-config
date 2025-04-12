@@ -1,10 +1,10 @@
 return {
   "folke/snacks.nvim",
   opts = {
-    terminal = { enabled = false },
+    -- terminal = { enabled = false },
     scroll = { enabled = false },
   },
   keys = {
-    { "<c-/>", false },
+    -- { "<c-/>", false },
   },
 }

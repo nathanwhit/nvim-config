@@ -15,3 +15,18 @@ deleteKeys({
   -- { "n", "<Space>ft" },
   -- { "n", "<Space>fT" },
 })
+
+if vim.g.vscode then
+  local vscode = require("vscode")
+  vim.keymap.set("n", "[d", function()
+    vscode.action("editor.action.marker.prevInFiles")
+  end)
+  vim.keymap.set("n", "]d", function()
+    vscode.action("editor.action.marker.nextInFiles")
+  end)
+  vim.keymap.set("n", "<C-/>", function()
+    vscode.action("workbench.action.terminal.toggleTerminal")
+  end)
+end
+
+vim.cmd("cabbrev <expr> w getcmdtype()==':' && getcmdline() == \"'<,'>w\" ? '<c-u>w' : 'w'")
